@@ -1,11 +1,13 @@
-@import url("//fonts.googleapis.com/css?family=Alegreya:400,400italic");
+@import url("//fonts.googleapis.com/css?family=Nu Sans:400,400italic");
 @import url("//fonts.googleapis.com/css?family=Alegreya SC:400,400italic");
 @import url("//fonts.googleapis.com/css?family=STIX Two Text:400,400italic");
 
 :root {
-	--text: "STIX Two Text", serif;
-	--heading: "STIX Two Text", serif;
-	--bg-color: #fffaf5;
+	--text: "Nu Sans", sans-serif;
+	--heading: "Nu Sans", sans-serif;
+	--bg-color: #faf3fe;
+	--accent-color: #670a7c;
+	--accent-color-dark: #4f0460;
 }
 
 html {
@@ -17,23 +19,43 @@ header {
 	margin-bottom: 2em;
 }
 
+body {
+	font-size:larger;
+	line-height: 1.5 em;
+}
+
 h1 {
+	color: var(--accent-color);
 	font-family: var(--heading);
 	font-variant: small-caps;
+	font-size:  2.7em;
+	font-weight: bolder;
+	line-height: 1.1em;
+}
+
+subtitle {
+	color: var(--accent-color-dark);
+	font-family: var(--heading);
+	/* font-variant: small-caps; */
+	font-size:  2em;
+	font-weight: bolder;
+	line-height: 1.1em;
 }
 
 h2 {
-	font-style: italic;
+	color: var(--accent-color);
+	/* font-style: italic; */
 }
 
 h3 {
+	color: var(--accent-color);
 	margin: 0em;
 	padding-top: 1em;
 	padding-bottom: 0em;
 }
 
 a, a:visited {
-	color: #00aaff;
+	color: #8817de;
 	text-decoration: none;
 }
 
@@ -50,7 +72,7 @@ a:hover {
 }
 
 .deadline {
-	color: red;
+	color: rgb(217, 0, 119);
 	font-weight: bold;
 	text-align: center;
 	margin: 2em;
@@ -116,4 +138,8 @@ details.shorttalk .katex {
 }
 .sponsors > img:nth-child(3n+1):last-child {
 	grid-column: 2;
+}
+
+strong {
+	color: var(--accent-color);
 }
